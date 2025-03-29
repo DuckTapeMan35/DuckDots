@@ -14,8 +14,9 @@ This is the main config file for i3wm, it requires that you also install some de
 yay -S nvim flameshot librewolf yazi rofi
 ```
  refer to scripts and browser folders for the rest of the dependencies.
+ technically speaking it also depends on https://github.com/adi1090x/polybar-themes but this is covered on the polaybar_an_rofi folder
  
 ## what to do with this file
 
 1. drop it in ~/.config/i3
-2. proceed to the scripts folder as a lot of things here depend on those
+2. complete the steps in the scripts and polybar_and_rofi folders
