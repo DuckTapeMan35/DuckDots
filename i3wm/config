@@ -78,15 +78,15 @@ bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+Control+b exec --no-startup-id librewolf
 
 # start ranger
-bindsym $mod+Control+f exec --no-startup-id kitty --command ranger
+bindsym $mod+Control+f exec --no-startup-id kitty --command y
 
 # start nano 
-bindsym $mod+n exec --no-startup-id kitty --command nano
+bindsym $mod+n exec --no-startup-id kitty --command nvim
 
 # rofi
 bindsym $mod+d exec ~/.config/polybar/hack/scripts/launcher.sh &
 bindsym $mod+x exec ~/.config/polybar/hack/scripts/powermenu.sh &
-bindsym $mod+z exec rofi -show window -theme /home/duck/.config/polybar/hack/scripts/rofi/window-switcher.rasi
+bindsym $mod+z exec rofi -show window -theme ~/.config/polybar/hack/scripts/rofi/window-switcher.rasi
 
 #------FN/MEDIA KEYS-----
 #------------------------
