@@ -3,13 +3,11 @@ my dotfiles: an idiot's attempt at computering
 
 
 ## Structure
-You see, I'm dumb af and will forget how all of this works in 2 days so this has to be structured in such a way that a 5 year old can understand.
+You see, I'm dumb af and will forget how all of this works in 2 days so this has to be structured in such a way that a 5 year old can understand, unfortunately for you I may or may not be autistic af so if you don't understand it well, tough luck ig.
 
 Simply open any folder and there will be instructions on how to set that part up in the readme, some ask that you refer to other folders for dependencies, this is because a lot of things are interconnected.
 
 Some dependencies are required in more than one place so sometimes they are repeated.
-
-If you don't understand it, well, tough luck, I may or may not be autistic af and this is the way I understand it.
 
 ## Some links and credits
 - i3wm config was inspired by https://github.com/xerbalind/i3wm-gruvbox
