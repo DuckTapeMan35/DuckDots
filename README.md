@@ -18,11 +18,11 @@ yay -S python-pywal kitty
 ```
 
 ## Some links and credits
--i3wm config was inspired by https://github.com/xerbalind/i3wm-gruvbox
--Polybar/rofi I use comes from https://github.com/adi1090x/polybar-themes with some slight modifications
--I have a razer keyboard so I https://polychromatic.app/
--Wallhaven is a great place to get wallpapers https://wallhaven.cc/
--I adapted this discord theme (https://github.com/chakibchemso/discord-tui) to work with pywal-discord (https://github.com/franekxtb/pywal-discord)
--I use this directly for spotify https://github.com/samu22cr/spicewal
--For Vscode I use an extension directly https://github.com/dlasagno/vscode-wal-theme
--Slightly adapted this yazi flavor (https://github.com/dangooddd/kanagawa.yazi)
+- i3wm config was inspired by https://github.com/xerbalind/i3wm-gruvbox
+- Polybar/rofi I use comes from https://github.com/adi1090x/polybar-themes with some slight modifications
+- I have a razer keyboard so I https://polychromatic.app/
+- Wallhaven is a great place to get wallpapers https://wallhaven.cc/
+- I adapted this discord theme (https://github.com/chakibchemso/discord-tui) to work with pywal-discord (https://github.com/franekxtb/pywal-discord)
+- I use this directly for spotify https://github.com/samu22cr/spicewal
+- For Vscode I use an extension directly https://github.com/dlasagno/vscode-wal-theme
+- Slightly adapted this yazi flavor (https://github.com/dangooddd/kanagawa.yazi)
