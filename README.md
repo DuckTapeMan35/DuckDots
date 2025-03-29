@@ -5,9 +5,11 @@ my dotfiles: an idiot's attempt at computering
 ## Structure
 You see, I'm dumb af and will forget how all of this works in 2 days so this has to be structured in such a way that a 5 year old can understand.
 
-Simply open any folder and there will be instructions on how to set that part up in the readme.
+Simply open any folder and there will be instructions on how to set that part up in the readme, some ask that you refer to other folders for dependencies, this is because a lot of things are interconnected.
 
-##dependencies that won't be mentioned anywhere else
+If you don't understand it, well, tough luck, I may or may not be autistic af and this is the way I understand it.
+
+## dependencies that won't be mentioned anywhere else
 these dependencies are overarching so they go here.
 
 - pywal
