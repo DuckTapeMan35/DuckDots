@@ -7,6 +7,8 @@ You see, I'm dumb af and will forget how all of this works in 2 days so this has
 
 Simply open any folder and there will be instructions on how to set that part up in the readme, some ask that you refer to other folders for dependencies, this is because a lot of things are interconnected.
 
+Some dependencies are required in more than one place so sometimes they are repeated.
+
 If you don't understand it, well, tough luck, I may or may not be autistic af and this is the way I understand it.
 
 ## Some links and credits
