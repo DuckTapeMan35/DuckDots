@@ -1,6 +1,6 @@
-This is the main config file for i3wm, it requires that you also install some dependencies and setup the scripts to work correctly
+This is the main config file for i3wm, it requires that you also install some dependencies and setup the scripts to work correctly.
 
-##dependencies
+## dependencies
 
 - all of the dependencies mentioned in the scripts folder
 - nvim
@@ -12,4 +12,8 @@ This is the main config file for i3wm, it requires that you also install some de
 ```bash
 yay -S nvim flameshot librewolf yazi
 ```
+ refer to scripts and browser folders for the rest of the dependencies.
  
+## what to do with this file
+
+drop it in ~/.config/i3
