@@ -17,4 +17,5 @@ yay -S nvim flameshot librewolf yazi rofi
  
 ## what to do with this file
 
-drop it in ~/.config/i3
+1. drop it in ~/.config/i3
+2. proceed to the scripts folder as a lot of things here depend on those
