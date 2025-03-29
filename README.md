@@ -9,16 +9,6 @@ Simply open any folder and there will be instructions on how to set that part up
 
 If you don't understand it, well, tough luck, I may or may not be autistic af and this is the way I understand it.
 
-## dependencies that won't be mentioned anywhere else
-these dependencies are overarching so they go here.
-
-- pywal
-- kitty
-
-```bash
-yay -S python-pywal kitty
-```
-
 ## Some links and credits
 - i3wm config was inspired by https://github.com/xerbalind/i3wm-gruvbox
 - Polybar/rofi I use comes from https://github.com/adi1090x/polybar-themes with some slight modifications
