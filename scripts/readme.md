@@ -8,7 +8,7 @@
 - pywal
 
   ```bash
-  yay -S picom pywal-discord polybar polychromatic-cli openrazer-daemon dunst pywal
+  yay -S picom pywal-discord polybar polychromatic-cli openrazer-daemon dunst python-pywal
   ```
 ## what to do with these
 
