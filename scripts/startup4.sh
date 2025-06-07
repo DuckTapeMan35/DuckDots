@@ -3,7 +3,7 @@
 killall -9 picom polybar dunst
 
 ~/.config/polybar/launch.sh --hack
-~/.config/polybar/hack/scripts/pywal.sh ~/Pictures/wallpaper4.jpg
+~/.config/polybar/hack/scripts/pywal.sh ~/Pictures/wallpaper4.png
 
 # Path to your pywal generated colors.json file
 COLOR_FILE="$HOME/.cache/wal/colors.json"
@@ -65,12 +65,8 @@ dunst &
 #Set discord theme
 pywal-discord -p ~/.config/vesktop/themes -t duck
 
-# Restart Polybar and picom
-polybar main &
+# Restart picom
 picom &
-
-#change keyboard color
-polychromatic-cli -d keyboard -o static -c "$color1"
 
 #apply spotify theme
 spicetify apply
