@@ -6,9 +6,10 @@
 - polychromatic-cli
 - dunst
 - pywal
+- rofi
 
   ```bash
-  yay -S picom pywal-discord polybar polychromatic-cli openrazer-daemon dunst python-pywal
+  yay -S picom pywal-discord polybar polychromatic-cli openrazer-daemon dunst python-pywal rofi
   ```
 ## what to do with these
 
