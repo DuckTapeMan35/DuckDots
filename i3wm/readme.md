@@ -8,7 +8,6 @@ This is the main config file for i3wm, it requires that you also install some de
 - flameshot
 - librewolf
 - yazi
-- rofi
 
 ```bash
 yay -S nvim flameshot librewolf yazi rofi
