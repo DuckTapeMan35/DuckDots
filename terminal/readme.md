@@ -7,11 +7,10 @@ kitty.conf makes your terminal transparent (requires picom) changes the colors t
 -terminus font
 
 ```bash
-yay -S terminus-ttf-font kitty
+yay -S terminus-ttf-font kitty fish
 ```
 
 ## what to do
 
-1. substitute your .bashrc file
-2. `source .bashrc`
-3. substitute your kitty.conf (located at ~/.config/kitty/kitty.conf) file for the provided one
+1. substitute your config.fish file
+2. substitute your kitty.conf (located at ~/.config/kitty/kitty.conf) file for the provided one
