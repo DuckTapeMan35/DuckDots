@@ -1,0 +1,116 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "bar": {
+      "char": {
+        "elapsed": "=",
+        "total": "-"
+      },
+      "width": 20
+    },
+    "percent": {
+      "type": 2
+    },
+    "separator": " "
+  },
+  "modules": [
+    {
+      "key": "╭────────────╮",
+      "type": "custom"
+    },
+    {
+      "key": "│ {#31} user     {#keys}│",
+      "type": "title",
+      "format": "{user-name}"
+    },
+    {
+      "key": "│ {#32}󰇅 hname    {#keys}│",
+      "type": "title",
+      "format": "{host-name}"
+    },
+    {
+      "key": "│ {#33}󰥔 uptime   {#keys}│",
+      "type": "uptime"
+    },
+    {
+      "key": "│ {#34}󰣇 os       {#keys}│",
+      "type": "os"
+    },
+    {
+      "key": "│ {#35}󰌢 Host     {#keys}│",
+      "type": "host"
+    },
+    {
+      "key": "│ {#36} kernel   {#keys}│",
+      "type": "kernel"
+    },
+    {
+      "key": "│ {#37} packages {#keys}│",
+      "type": "packages"
+    },
+    {
+      "key": "│ {#31} shell    {#keys}│",
+      "type": "shell"
+    },
+    {
+      "key": "│ {#32} terminal {#keys}│",
+      "type": "terminal"
+    },
+    {
+      "key": "│ {#33} wm       {#keys}│",
+      "type": "wm"
+    },
+    {
+      "key": "│ {#34}󰏘 theme    {#keys}│",
+      "type": "theme"
+    },
+    {
+      "key": "│ {#35} icons    {#keys}│",
+      "type": "icons"
+    },
+    {
+      "key": "│ {#36}󰛖 font     {#keys}│",
+      "type": "font"
+    },
+    {
+      "key": "│ {#37}󰇀 cursor   {#keys}│",
+      "type": "cursor"
+    },
+    {
+      "key": "│ {#31}󰍛 cpu      {#keys}│",
+      "type": "cpu",
+      "showPeCoreCount": true,
+      "temp": true
+    },
+    {
+      "key": "│ {#32}󰢮 gpu      {#keys}│",
+      "type": "gpu",
+      "driverSpecific": true,
+      "temp": true,
+      "format": "{dedicated-percentage-bar} {dedicated-used} / {dedicated-total} - {name} - {temperature}"
+    },
+    {
+      "key": "│ {#33} memory   {#keys}│",
+      "type": "memory"
+    },
+    {
+      "key": "│ {#34}󰯍 swap     {#keys}│",
+      "type": "swap"
+    },
+    {
+      "key": "│ {#35} root     {#keys}│",
+      "type": "disk",
+      "folders": "/"
+    },
+    {
+      "key": "│ {#35} home     {#keys}│",
+      "type": "disk",
+      "folders": "/home"
+    },
+    {
+      "key": "╰────────────╯",
+      "type": "custom"
+    },
+    "colors"
+  ]
+}

@@ -1,0 +1,1 @@
+/home/duck/.cache/wal/colors.qml
