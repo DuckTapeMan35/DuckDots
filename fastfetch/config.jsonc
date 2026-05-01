@@ -90,7 +90,7 @@
       "format": "{dedicated-percentage-bar} {dedicated-used} / {dedicated-total} - {name} - {temperature}"
     },
     {
-      "key": "│ {#33} memory   {#keys}│",
+      "key": "│ {#33} memory   {#keys}│",
       "type": "memory"
     },
     {

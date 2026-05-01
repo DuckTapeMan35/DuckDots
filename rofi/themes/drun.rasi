@@ -1,0 +1,100 @@
+@import "~/.cache/wal/colors.rasi"
+
+* {
+    font: "Fira Code Nerd Font 12";
+    text-color: @foreground;
+    background-color: transparent;
+}
+
+/* Main window */
+window {
+    width: 350px;
+    height: 502px;
+    background-color: @transparentColor0;
+    border-radius: 0px;
+    border-color: @color9;
+    border: 2px;
+}
+
+message {
+    background-color: @color9;
+    horizontal-align: 0.5;
+    padding: 0px 120px 0px 6px;
+}
+
+textbox {
+    background-color: transparent;
+    color: @color0;
+    font: "Fira Code Nerd Font 12";
+    border-radius: 0px;
+    padding: 0px 120px 0px 6px;
+}
+
+inputbar children {
+    background-color: @color9;
+}
+
+/* Input bar */
+inputbar {
+    background-color: "transparent";
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+prompt {
+    background-color: @color9;
+    text-color: @color0;
+    horizontal-align: 0.5;
+    font: "Fira Code Nerd Font 16";
+    padding: 0px 12px 0px 6px;
+}
+
+mainbox {
+  spacing: 0px;
+}
+
+entry {
+    text-color: @color15;
+    padding: 0px 0px 0px 5px;
+    vertical-align: 0.5;
+}
+
+
+/* Each entry */
+element {
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 4px;
+    margin: 0px 0px 0px 31px;
+}
+
+element-text {
+    text-color: @color15;
+    vertical-align: 0.5;
+}
+
+/* Selected entry */
+element.selected {
+    background-color: @color9;
+  margin: 0px;
+}
+
+element-text.selected {
+    text-color: @color0;
+}
+
+element-icon {
+    /* Small: 24px */
+    /* size: 24px; */
+    
+    /* Medium: 32px (good balance) */
+    size: 32px;
+    
+    /* Large: 48px (very prominent) */
+    /* size: 48px; */
+    
+    /* Extra large: 64px */
+    /* size: 64px; */
+    
+    padding: 0px 10px 0px 0px;
+}

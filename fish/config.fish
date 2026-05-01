@@ -4,22 +4,14 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias update='sudo pacman -Syu'
-alias yayupdate='yay -Syu'
+alias yupdate='yay -Syu'
+
 
 # ===== Startup Command =====
 if status is-interactive
     if command -q fastfetch
         fastfetch
     end
-end
-
-# ===== Pyenv Setup =====
-set -Ux PYENV_ROOT $HOME/.pyenv
-fish_add_path $PYENV_ROOT/bin
-if command -q pyenv
-    pyenv init --path | source
-    pyenv init - | source
-    # pyenv virtualenv-init - | source
 end
 
 # ===== GHCup Setup =====
@@ -38,6 +30,16 @@ function y
     rm -f "$tmp"
 end
 
+# ===== Find In File Function =====
+function fif --description "Fuzzy find with ripgrep, bat preview, open in nvim"
+    rg --column --line-number --no-heading --color=always --smart-case $argv "" |
+        fzf --ansi \
+            --delimiter : \
+            --preview 'bat --style=numbers --color=always --highlight-line {2} {1} --line-range :500' \
+            --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+            --bind 'enter:become(nvim {1} +{2})'
+end
+
 # ===== NVM Setup =====
 # Only run fisher if it's installed and we haven't set the flag
 if command -q fisher
@@ -54,12 +56,9 @@ set -gx EDITOR /usr/bin/nvim
 
 set -gx JAVA_HOME /usr
 
-set -gx OPENRGB_USER duck
+set -gx QT_QPA_PLATFORMTHEME qt6ct
 
-set -gx QT_STYLE_OVERRIDE kvantum
-set -gx QT_QPA_PLATFORMTHEME qt5ct
-
-set -gx PATH $HOME/.spicetify $HOME/.cargo/bin $JAVA_HOME/bin $HOME/.local/bin $PATH
+set -gx PATH $HOME/.cargo/bin $JAVA_HOME/bin $HOME/.local/bin $HOME/.config/emacs/bin $PATH
 
 # ===== Visual Setup =====
 set -g theme_color_scheme terminal
@@ -71,6 +70,12 @@ set -g theme_display_hostname yes
 set -g theme_display_date no
 
 set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+
+set fish_cursor_default block blink
+
+set fish_cursor_insert line blink
+
+set fish_cursor_replace_one underscore blink
 
 function bobthefish_colors -S -d 'Define a custom bobthefish color scheme'
   set -x color_path_basename 333333 ffffff --bold
@@ -85,5 +90,3 @@ function fish_user_key_bindings
     # This makes Ctrl+E accept autosuggestions in visual mode
     bind -M visual \ce forward-char
 end
-
-

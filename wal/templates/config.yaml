@@ -1,0 +1,278 @@
+window_manager: mangowc
+log_level: critical
+
+key_positions:
+  # Define positions for individual keys, the tuple corrsponds to (row, column) of they keyboard as defioned by openrgb
+  # Alternatively you can also use key names instead of tuples
+  q:
+    - q
+  x:
+    - x
+  i:
+    - i
+  s:
+    - s
+  e:
+    - e
+  n:
+    - n
+  g:
+    - g
+  r:
+    - r
+  c:
+    - c
+  a:
+    - a
+  f:
+    - f
+  print_screen:
+    - print screen
+    - p
+  # Numbers must be inside '' or they will be cast into integers
+  1_key:
+    - '1'
+  2_key:
+    - '2'
+  3_key:
+    - '3'
+  4_key:
+    - '4'
+  5_key:
+    - '5'
+  6_key:
+    - '6'
+  7_key:
+    - '7'
+  8_key:
+    - '8'
+  9_key:
+    - '9'
+  0_key:
+    - '0'
+
+  # Define positions for special keys
+  super: 
+    - left windows
+  enter: 
+    - enter
+  shift:
+    - left shift
+    - right shift
+  tab:
+    - tab
+  space:
+    - space
+  alt:
+    - left alt
+    - right alt
+
+  # Define groups of keys
+  numbers:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '0'
+  layouts:
+    - t
+    - s
+    - m
+    - g
+    - d
+    - c
+    - v
+  # You can also use a list
+  arrows: [right arrow, left arrow , up arrow, down arrow]
+
+modes:
+  # Base mode - applied when no keys are pressed
+  base:
+    rules:
+      - keys: [all]
+        color: "{color9}"
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+
+  # Single-key modes
+  super:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [super]
+        color: [255, 255, 255]
+      - keys: [enter]
+        color: "{color15}"
+      - keys: [d]
+        color: "{color9}"
+      - keys: [x]
+        color: [255, 0, 0]
+      - keys: [i]
+        color: "{color10}"
+      - keys: [arrows]
+        color: [255,255,255]
+      - keys: [shift]
+        color: [255, 255, 255]
+      - keys: [tab]
+        color: [255,255,255]
+      - keys: [e]
+        color: "{color11}"
+      - keys: [n]
+        color: "{color12}"
+      - keys: [print_screen]
+        color: "{color13}"
+      - keys: [g]
+        color: "{color14}"
+      - keys: [r]
+        color: "{color9}"
+      - keys: [space]
+        color: "{color10}"
+      - keys: [c]
+        color: "{color11}"
+      - keys: [a]
+        color: "{color12}"
+
+  # n-key combination modes are formated as KeyBeingHeld_NewKeyBeingHeld_etc
+  super_shift:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [super]
+        color: [255, 255, 255]
+      - keys: [q]
+        color: [255, 0, 0]
+      - keys: [e]
+        color: [255, 0, 0]
+      - keys: [shift]
+        color: [255, 255, 255]
+      - keys: [arrows]
+        color: [255,255,255]
+      - keys: [layouts]
+        color: "{color9}"
+      - keys: [n]
+        color: "{color10}"
+  shift_super:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [super]
+        color: [255, 255, 255]
+      - keys: [q]
+        color: [255, 0, 0]
+      - keys: [e]
+        color: [255, 0, 0]
+      - keys: [shift]
+        color: [255, 255, 255]
+      - keys: [arrows]
+        color: [255,255,255]
+      - keys: [layouts]
+        color: "{color9}"
+      - keys: [n]
+        color: "{color10}"
+  alt:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [alt]
+        color: [255,255,255]
+      - keys: [shift]
+        color: [255,255,255]
+      - keys: [tab]
+        color: "{color9}"
+      - keys: [f]
+        color: "{color10}"
+      - keys: [i]
+        color: "{color11}"
+      - keys: [c]
+        color: "{color12}"
+  alt_shift:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [i]
+        color: "{color9}"
+      - keys: [alt, shift]
+        color: [255,255,255]
+  shift_alt:
+    rules:
+      - keys: [numbers]
+        condition: workspaces
+        value: active
+        color: "{color15}"
+      - keys: [numbers]
+        condition: workspaces
+        value: inactive
+        color: "{color3}"
+      - keys: [numbers]
+        condition: workspaces
+        value: focused
+        color: "{color9}"
+      - keys: [i]
+        color: "{color9}"
+      - keys: [alt, shift]
+        color: [255,255,255]

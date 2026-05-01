@@ -1,0 +1,17 @@
+[[mgr.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+desc = "Jump to char"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[mgr.prepend_keymap]]
+on = "u"
+run = "plugin restore"
+
+[[mgr.append_keymap]]
+on = ["g", "s"]
+run = "cd ~/school"
+desc = "Go to school"

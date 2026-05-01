@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-ALLOW-CACHE:NO
+#EXT-X-TARGETDURATION:8.167
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXTINF:8.167,
+audio_segment.ogg?region=us-west-2&bucket=iv-prod-pro-generatives&key=ca3f1131-ce54-4e68-8c81-567e780f7aef/stitched_with_audio/stitched_with_audio.mp4&preset=hd48stereo_vorbis_hls_overlapped_no_normalized&start=0&duration=8.167
+#EXT-X-ENDLIST

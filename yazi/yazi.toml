@@ -35,10 +35,10 @@ edit = [
 	{ run = "code -w %s",       desc = "code (block)", for = "windows", block = true },
 ]
 play = [
-	{ run = "xdg-open %s1",                desc = "Play", for = "linux" },
-	{ run = "open %s",                     desc = "Play", for = "macos" },
-	{ run = 'start "" %s1', orphan = true, desc = "Play", for = "windows" },
-	{ run = "termux-open %s1",             desc = "Play", for = "android" },
+	{ run = "xdg-open %s1",    desc = "Play", for = "linux", orphan = true },
+	{ run = "open %s",         desc = "Play", for = "macos" },
+	{ run = 'start "" %s1',    desc = "Play", for = "windows", orphan = true },
+	{ run = "termux-open %s1", desc = "Play", for = "android" },
 	{ run = "mediainfo %s1; echo 'Press enter to exit'; read _", block = true, desc = "Show media info", for = "unix" },
 	{ run = "mediainfo %s1 & pause", block = true, desc = "Show media info", for = "windows" },
 ]
@@ -63,7 +63,7 @@ download = [
 	{ run = "ya emit download %S",        desc = "Download" },
 ]
 pdff = [
-	{ run = '/home/duck/.config/yazi/scripts/zathura.sh %s', desc = "zathura", block = false, for = "unix" },
+  { run = "/home/duck/.config/yazi/scripts/zathura.sh %s", desc = "zathura", block = false, for = "unix" },
 ]
 
 [open]
@@ -85,8 +85,6 @@ rules = [
 	{ mime = "inode/empty", use = [ "edit", "reveal" ] },
 	# Virtual file system
 	{ mime = "vfs/{absent,stale}", use = "download" },
-  # PDF
-  { mime = "application/pdf", use = [ "pdff", "reveal" ] },
 	# Fallback
 	{ url = "*", use = [ "open", "reveal" ] },
 ]
@@ -102,9 +100,9 @@ suppress_preload = false
 [plugin]
 fetchers = [
 	# Mimetype
-	{ id = "mime", url = "*/",         run = "mime.dir", prio = "high" },
-	{ id = "mime", url = "local://*",  run = "mime.local", prio = "high" },
-	{ id = "mime", url = "remote://*", run = "mime.remote", prio = "high" },
+	{ id = "mime", url = "*/",         run = "mime.dir", prio = "high", group = "fs" },
+	{ id = "mime", url = "local://*",  run = "mime.local", prio = "high" , group = "fs" },
+	{ id = "mime", url = "remote://*", run = "mime.remote", prio = "high" , group = "fs" },
 ]
 spotters = [
 	{ url = "*/", run = "folder" },
@@ -230,7 +228,7 @@ overwrite_offset = [ 0, 0, 50, 15 ]
 
 # quit
 quit_title  = "Quit?"
-quit_body   = "The following tasks are still running, are you sure you want to quit?"
+quit_body   = "There are unfinished tasks, quit anyway?\n(Open task manager with default key 'w')"
 quit_origin = "center"
 quit_offset = [ 0, 0, 50, 15 ]
 
@@ -244,4 +242,3 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
-

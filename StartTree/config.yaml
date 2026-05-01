@@ -1,0 +1,20 @@
+font_size: 22
+theme: pywal
+tree_0:
+  school:
+    fcup: "https://sigarra.up.pt/fcup/pt/web_page.inicial"
+    PI website: "https://www.dcc.fc.up.pt/~fds/aulas/pi/2526/"
+    mooshak PI: "https://mooshak.dcc.fc.up.pt/~pi/"
+    mooshak DAA: "https://mooshak.dcc.fc.up.pt/~daa"
+tree_1:
+  programming:
+    github: "https://www.github.com/"
+    arch wiki: "https://archlinux.org/"
+    mangowm docs: "https://mangowm.github.io/docs/"
+    glide docs: "https://glide-browser.app/"
+tree_2:
+  entertainment:
+    youtube: "https://www.youtube.com"
+    lichess: "https://lichess.org/"
+    boundless spire: "https://dev.boundless-spire.com"
+

@@ -1,9 +1,18 @@
 #!/bin/bash
 
+# generate colors
 wal --backend haishoku --cols16 -i $1 -n
-swww img $1 -t grow --transition-step 90 --transition-duration 1.7 --transition-pos top-right
-
+# send save events to reload configs
+touch /home/duck/.config/rio/config.toml
+touch /home/duck/.config/vesktop/themes/system24.theme.css
+# reload mango config
+mmsg -d reload_config
+# change background
+awww img $1 -t grow --transition-step 90 --transition-duration 1.7 --transition-pos top-right
+# reload browser homepage
+starttree &
+# reload swaync
 killall swaync
 swaync &
-pywal-discord -t duck -p /home/duck/.config/vesktop/themes
+# reload gtk theme
 oomox-cli -o pywal /home/duck/.cache/wal/colors-oomox

@@ -1,0 +1,109 @@
+confirm-before-quit = false
+
+use-fork = false
+
+[cursor]
+blinking = true
+blinking-interval = 800
+
+[editor]
+program = "nvim"
+args = []
+
+[renderer]
+performance = "high"
+backend = "Vulkan"
+disable-unfocused-render = false
+level = 1
+filters = []
+
+[fonts]
+size = 16
+
+[fonts.regular]
+family = "FiraCode Nerd Font Mono"
+style = "Normal"
+weight = 500
+
+[fonts.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Normal"
+weight = 800
+
+[fonts.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+weight = 600
+
+[fonts.bold-italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+weight = 800
+
+[shell]
+program = "/bin/fish"
+
+[effects]
+trail-cursor = true
+
+[colors]
+# Regular colors
+background = '{background}'
+black = '{color0}'
+blue = '{color4}'
+cyan = '{color6}'
+foreground  = '{foreground}'
+green = '{color2}'
+magenta = '{color5}'
+red = '{color1}'
+white = '{color7}'
+yellow = '{color3}'
+
+# Cursor
+cursor = '{color15}'
+vi-cursor = '{color15}'
+
+# Navigation
+tabs = '{color7}'  # Inactive tab text and border color
+tabs-active = '{color15}'  # Active tab text color
+bar = '{color0}'
+split = '{color8}'
+
+# Search
+search-match-background = '{color9}'
+search-match-foreground = '{color15}'
+search-focused-match-background = '{color1}'
+search-focused-match-foreground = '{color15}'
+
+# Hints
+hint-foreground = '{color8}'
+hint-background = '{color7}'
+
+# Selection`
+selection-foreground = '{color0}'
+selection-background = '{color9}'
+
+# Dim colors
+dim-black = '{color0}'
+dim-blue = '{color4}'
+dim-cyan = '{color6}'
+dim-foreground = '{color8}'
+dim-green = '{color2}'
+dim-magenta = '{color5}'
+dim-red = '{color1}'
+dim-white = '{color7}'
+dim-yellow = '{color3}'
+
+# Light colors
+light-black = '{color8}'
+light-blue = '{color12}'
+light-cyan = '{color14}'
+light-foreground = '{color15}'
+light-green = '{color10}'
+light-magenta = '{color13}'
+light-red = '{color9}'
+light-white = '{color15}'
+light-yellow = '{color11}'
+
+[window]
+opacity = 0.9

@@ -28,22 +28,22 @@ function fish_mode_prompt -d 'bobthefish-optimized fish mode indicator'
             set_color -b $color_vi_mode_default
             echo -n ' N '
             set_color -b $color_vi_mode_default_reverse
-            echo ""
+            echo ""
         case insert
             set_color -b $color_vi_mode_insert
             echo -n ' I '
             set_color -b $color_vi_mode_insert_reverse
-            echo ""
+            echo ""
         case replace replace_one replace-one
             set_color -b $color_vi_mode_insert
             echo -n ' R '
             set_color -b $color_vi_mode_insert_reverse
-            echo ""
+            echo ""
         case visual
             set_color -b $color_vi_mode_visual
             echo -n ' V '
             set_color -b $color_vi_mode_visual_reverse
-            echo ""
+            echo ""
     end
 
     set_color normal

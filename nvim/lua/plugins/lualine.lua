@@ -21,11 +21,8 @@ return {
 
     local opts = {
       options = {
-        theme = "auto",
+        theme = "tokyonight",
         globalstatus = vim.o.laststatus == 3,
-        disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
-        section_separators = { left = "", right = "" },
-        component_separators = { left = "", right = "" },
       },
       sections = {
         lualine_a = { "mode" },

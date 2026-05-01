@@ -1,0 +1,17 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "1962818"
+hash = "7a4b4237223aaa94e589d1c01a23542a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "1962818"
+hash = "91937a4a9b779eabc6983e258befdfe9"
+
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "4eda0bf"
+hash = "778941e7f1ebbacd60f4e254bb3c51de"
+
+[flavor]
+deps = []

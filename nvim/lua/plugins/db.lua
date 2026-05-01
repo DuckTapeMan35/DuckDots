@@ -1,0 +1,102 @@
+-- return {
+--   "zerochae/dbab.nvim",
+--   dependencies = {
+--     "MunifTanjim/nui.nvim",
+--     "nvim-lua/plenary.nvim", -- Optional: for async execution
+--     "tpope/vim-dadbod", -- Optional: for executor = "dadbod"
+--     "hrsh7th/nvim-cmp", -- Optional: for autocompletion
+--   },
+--   config = function()
+--     require("dbab").setup({
+--       connections = {
+--         { name = "boundless_spire_db", url = "postgres://duck:duck@127.0.0.1:5432/boundless_spire_db" },
+--         { name = "boundless_spire_dev_db", url = "postgres://ploi:BF2sInKMSI6bTFswImoJ@184.105.7.105:5432/boundless_spire_dev_db" },
+--       },
+--       executor = "cli", -- "cli" (self-contained) | "dadbod" (requires vim-dadbod)
+--       layout = "classic", -- "classic" | "wide" | custom layout table
+--       sidebar = {
+--         width = 0.2,
+--         use_brand_icon = false, -- true: per-DB icons, false: generic db icon
+--         use_brand_color = false, -- true: per-DB brand colors, false: single color (Number)
+--         show_brand_name = false, -- true: show [postgres] label, false: icon + name only
+--         show_system_schemas = true,
+--       },
+--       editor = {
+--         show_tabbar = true, -- show tab bar above editor
+--       },
+--       result = {
+--         max_width = 120,
+--         max_height = 20,
+--         show_line_number = true,
+--         header_align = "fit", -- "fit" or "full"
+--         style = "table", -- "table", "json", "raw", "vertical", "markdown"
+--       },
+--       history = {
+--         width = 0.2,
+--         style = "compact", -- "compact" or "detailed"
+--         max_entries = 100,
+--         on_select = "execute", -- "execute" or "load"
+--         persist = true,
+--         filter_by_connection = true,
+--         query_display = "auto", -- "short", "full", or "auto"
+--         short_hints = { "where", "join", "order", "group", "limit" },
+--       },
+--       keymaps = {
+--         open = "<Leader>db",
+--         execute = "<CR>",
+--         close = "q",
+--         sidebar = {
+--           toggle_expand = { "<CR>", "o" },
+--           refresh = "R",
+--           rename = "r",
+--           new_query = "n",
+--           copy_name = "y",
+--           insert_template = "i",
+--           delete = "d",
+--           copy_query = "c",
+--           paste_query = "p",
+--           to_editor = "<Tab>",
+--           to_history = "<S-Tab>",
+--         },
+--         history = {
+--           select = "<CR>",
+--           execute = "R",
+--           copy = "y",
+--           delete = "d",
+--           clear = "C",
+--           to_sidebar = "<Tab>",
+--           to_result = "<S-Tab>",
+--         },
+--         editor = {
+--           execute_insert = "<C-CR>",
+--           execute_leader = "<Leader>r",
+--           save = "<C-s>",
+--           next_tab = "gt",
+--           prev_tab = "gT",
+--           close_tab = "<Leader>w",
+--           to_result = "<Tab>",
+--           to_sidebar = "<S-Tab>",
+--         },
+--         result = {
+--           yank_row = "y",
+--           yank_all = "Y",
+--           to_sidebar = "<Tab>",
+--           to_editor = "<S-Tab>",
+--         },
+--       },
+--       highlights = {
+--         -- Override any Dbab highlight group
+--         -- DbabHeader = { bg = "#ff6600", fg = "#000000" },
+--       },
+--     })
+--   end,
+-- }
+-- return { "joryeugene/dadbod-grip.nvim", version = "*", require("dadbod-grip").setup({ ai = false })}
+return {
+  "h4kbas/neosql.nvim",
+  config = function()
+    require('neosql').setup({
+      -- configuration options
+    })
+  end
+}

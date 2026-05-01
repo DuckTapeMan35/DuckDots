@@ -1,0 +1,52 @@
+confirm-before-quit = false
+
+use-fork = false
+
+theme = "/home/duck/.cache/wal/colors-rio.toml"
+
+[cursor]
+blinking = true
+blinking-interval = 800
+
+[editor]
+program = "nvim"
+args = []
+
+[renderer]
+performance = "high"
+backend = "Vulkan"
+disable-unfocused-render = false
+level = 1
+filters = []
+
+[fonts]
+size = 16
+
+[fonts.regular]
+family = "FiraCode Nerd Font Mono"
+style = "Normal"
+weight = 500
+
+[fonts.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Normal"
+weight = 800
+
+[fonts.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+weight = 600
+
+[fonts.bold-italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+weight = 800
+
+[shell]
+program = "/bin/fish"
+
+[effects]
+trail-cursor = true
+
+[window]
+opacity = 0.9
